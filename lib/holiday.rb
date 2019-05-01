@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidayType.each do |holiday, itemType|
       holidayStr = holiday.to_s
       holidayStr.gsub!(/_/, ' ')
-      holidayStr = holidayStr.gsub!(/\w+/) { |word| word.capitalize }
+      holidayStr = holidayStr.gsub(/\w+/) { |word| word.capitalize }
       puts "  #{holidayStr}: #{itemType.join(", ")}"
     end
   end
