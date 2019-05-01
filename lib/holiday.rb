@@ -81,7 +81,6 @@ def all_holidays_with_bbq(holiday_hash)
     holidayType.each do |holiday, itemType|
       itemType.each do |item|
         if item == "BBQ"
-          puts "#{item}"
           holidayArray << holiday
         end
       end
