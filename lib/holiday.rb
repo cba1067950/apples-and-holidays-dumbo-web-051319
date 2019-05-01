@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidayStr = holiday.to_s
       holidayStr.gsub!(/_/, ' ')
       holidayStr = holidayStr.gsub!(/\w+/) { |word| word.capitalize }
-      puts "  #{holidayStr.capitalize}: #{itemType.join(", ")}"
+      puts "  #{holidayStr}: #{itemType.join(", ")}"
     end
   end
 end
